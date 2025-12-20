@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>📝 Task Manager</h1>
+
+      <div id="showerror" class="showerror" style="display: none">Error</div>
+
+      <div class="input-div">
+        <input
+          id="task-input"
+          class="task-input"
+          type="text"
+          placeholder="Enter your task here..."
+        />
+
+        <button id="add-btn" class="add-btn">Add Task</button>
+      </div>
+
+      <div id="updatebtnC" class="update" style="display: none">
+        <button id="update-btn" class="update-btn">Update</button>
+        <button id="cancel-btn" class="cancel-btn">cancel</button>
+      </div>
+
+      <div id="load" class="load" style="display: none">Loading...</div>
+
+      <ul id="task-list" class="task-list">
+        <!-- <li id="list" class="list">
+          <div>
+            <div id="task-content" class="task-content">Task</div>
+
+            <div id="id" class="id">1</div>
+          </div>
+          <button id="bt">:</button>
+          <div id="update-task" class="update-task">
+            <button id="done" class="done">Done</button>
+            <button id="edit" class="edit">Edit</button>
+            <button id="Delete" class="Delete">Delete</button>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
