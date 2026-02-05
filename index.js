@@ -60,7 +60,7 @@ async function fetchTasks() {
             <button id="done" class="done" onclick ="editTask()">Done</button>
             <button id="edit" class="edit" onclick = "updateTask('${x.id}', '${x.name}')">Edit</button>
             <button id="Delete" class="Delete" onclick ="deletTask('${x.id}')">Delete</button>
-           <button class ="xbtn" onclick = "closebtn(this)"> ❌</button>
+           <button class ="xbtn" onclick = "closebtn(this)">✘</button>
           
           </div>
 
