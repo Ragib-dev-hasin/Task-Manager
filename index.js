@@ -60,7 +60,7 @@ async function fetchTasks() {
             <button id="done" class="done" onclick ="editTask()">Done</button>
             <button id="edit" class="edit" onclick = "updateTask('${x.id}', '${x.name}')">Edit</button>
             <button id="Delete" class="Delete" onclick ="deletTask('${x.id}')">Delete</button>
-
+           <button class ="xbtn" onclick = "closebtn(this)"> ❌</button>
           
           </div>
 
@@ -75,21 +75,30 @@ async function fetchTasks() {
 }
 
 function btn(el) {
-  const cl = el.parentElement.querySelectorAll(".done , .edit , .Delete");
+  const cl = el.parentElement.querySelectorAll(
+    ".done , .edit , .Delete , .xbtn",
+  );
 
   cl.forEach((x) => {
     x.style.display = "inline-block";
   });
 
   el.style.display = "none";
-  // const btt = document.getElementById("bt");
-
-  // btt.style.display = "none";
-
-  // btt.forEach((y) => {
-  //   y.style.display = "none";
-  // });
 }
+
+function closebtn(el) {
+  const cls = el.parentElement.querySelectorAll(
+    ".done , .edit , .Delete , .xbtn",
+  );
+
+  cls.forEach((x) => {
+    x.style.display = "none";
+  });
+
+  const bt = el.parentElement.querySelector(".bt");
+  bt.style.display = "inline-block";
+}
+
 //POST
 
 async function createTask() {
